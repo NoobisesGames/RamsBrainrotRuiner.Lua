@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 122 | Scripts: 45 | Modules: 0 | Tags: 0
+-- Instances: 145 | Scripts: 55 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.BrainrotDestroyet
@@ -22,8 +22,8 @@ G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["2"]["Size"] = UDim2.new(0, 803, 0, 451);
-G2L["2"]["Position"] = UDim2.new(0.05605, 0, 0.27644, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.29878, -84, 0.32562, -12);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.UICorner
@@ -41,10 +41,9 @@ G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["BackgroundTransparency"] = 1;
-G2L["4"]["Size"] = UDim2.new(0, 500, 0, 58);
+G2L["4"]["Size"] = UDim2.new(0, 335, 0, 58);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Text"] = [[Rams Brainrot Ruiner]];
-G2L["4"]["Position"] = UDim2.new(0, 0, 0, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.TabsOpener
@@ -481,98 +480,97 @@ G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.TextEditor
-G2L["2c"] = Instance.new("TextBox", G2L["2"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots
+G2L["2c"] = Instance.new("ScrollingFrame", G2L["2"]);
 G2L["2c"]["Visible"] = false;
-G2L["2c"]["CursorPosition"] = -1;
-G2L["2c"]["Name"] = [[TextEditor]];
-G2L["2c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2c"]["Active"] = true;
 G2L["2c"]["BorderSizePixel"] = 5;
-G2L["2c"]["TextWrapped"] = true;
-G2L["2c"]["TextSize"] = 15;
-G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2c"]["Name"] = [[screamforbrainrots]];
 G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c"]["MultiLine"] = true;
-G2L["2c"]["ClearTextOnFocus"] = false;
 G2L["2c"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["2c"]["Position"] = UDim2.new(0.28989, 0, 0.129, 0);
+G2L["2c"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
 G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Text"] = [[This is just a small code editor for mobile user so use it if you need to then paste ur code into ur executor]];
 
 
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.Clear
-G2L["2d"] = Instance.new("ImageButton", G2L["2c"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed
+G2L["2d"] = Instance.new("TextButton", G2L["2c"]);
 G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["BackgroundTransparency"] = 1;
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["Image"] = [[rbxassetid://77365486539314]];
-G2L["2d"]["Size"] = UDim2.new(0, 59, 0, 59);
+G2L["2d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2d"]["TextSize"] = 31;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Name"] = [[Clear]];
-G2L["2d"]["Position"] = UDim2.new(-0.1387, 0, 0.08556, 0);
+G2L["2d"]["Text"] = [[Speed]];
+G2L["2d"]["Name"] = [[Speed]];
+G2L["2d"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.Clear.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed.LocalScript
 G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.TextBox
-G2L["2f"] = Instance.new("TextBox", G2L["2c"]);
-G2L["2f"]["CursorPosition"] = -1;
-G2L["2f"]["BorderSizePixel"] = 5;
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed.TextBox
+G2L["2f"] = Instance.new("TextBox", G2L["2d"]);
+G2L["2f"]["BorderSizePixel"] = 0;
 G2L["2f"]["TextWrapped"] = true;
-G2L["2f"]["TextSize"] = 16;
-G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2f"]["ClearTextOnFocus"] = false;
-G2L["2f"]["PlaceholderText"] = [[text  size]];
-G2L["2f"]["Size"] = UDim2.new(0, 54, 0, 50);
-G2L["2f"]["Position"] = UDim2.new(-0.14, 0, 0.4, 0);
+G2L["2f"]["TextSize"] = 23;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["PlaceholderText"] = [[Input Speed Here]];
+G2L["2f"]["Size"] = UDim2.new(0, 163, 0, 35);
+G2L["2f"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
 G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Text"] = [[14]];
+G2L["2f"]["Text"] = [[]];
 
 
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.TextBox.LocalScript
-G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Spinadder
+G2L["30"] = Instance.new("TextButton", G2L["2c"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["30"]["TextSize"] = 31;
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[Add Spins]];
+G2L["30"]["Name"] = [[Spinadder]];
+G2L["30"]["Position"] = UDim2.new(0.01765, 0, 0.36127, 0);
 
 
-
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyScript
-G2L["31"] = Instance.new("ImageButton", G2L["2c"]);
-G2L["31"]["BorderSizePixel"] = 0;
-G2L["31"]["BackgroundTransparency"] = 1;
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["Image"] = [[rbxassetid://133824470118301]];
-G2L["31"]["Size"] = UDim2.new(0, 74, 0, 74);
-G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Name"] = [[CopyScript]];
-G2L["31"]["Position"] = UDim2.new(-0.15956, 0, 0.64194, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyScript.LocalScript
-G2L["32"] = Instance.new("LocalScript", G2L["31"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Spinadder.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots
-G2L["33"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["33"]["Visible"] = false;
-G2L["33"]["Active"] = true;
-G2L["33"]["BorderSizePixel"] = 5;
-G2L["33"]["Name"] = [[screamforbrainrots]];
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["33"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["33"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptoend
+G2L["32"] = Instance.new("TextButton", G2L["2c"]);
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["32"]["TextSize"] = 31;
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[Tp to end]];
+G2L["32"]["Name"] = [[Tptoend]];
+G2L["32"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed
-G2L["34"] = Instance.new("TextButton", G2L["33"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptoend.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptostart
+G2L["34"] = Instance.new("TextButton", G2L["2c"]);
 G2L["34"]["BorderSizePixel"] = 0;
 G2L["34"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["34"]["TextSize"] = 31;
@@ -581,54 +579,56 @@ G2L["34"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["34"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Text"] = [[Speed]];
-G2L["34"]["Name"] = [[Speed]];
-G2L["34"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
+G2L["34"]["Text"] = [[Tp to start]];
+G2L["34"]["Name"] = [[Tptostart]];
+G2L["34"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptostart.LocalScript
 G2L["35"] = Instance.new("LocalScript", G2L["34"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed.TextBox
-G2L["36"] = Instance.new("TextBox", G2L["34"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Force50k
+G2L["36"] = Instance.new("TextButton", G2L["2c"]);
 G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["TextWrapped"] = true;
-G2L["36"]["TextSize"] = 23;
-G2L["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["TextScaled"] = true;
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["36"]["PlaceholderText"] = [[Input Speed Here]];
-G2L["36"]["Size"] = UDim2.new(0, 163, 0, 35);
-G2L["36"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
+G2L["36"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["36"]["TextSize"] = 31;
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Text"] = [[]];
+G2L["36"]["Text"] = [[Spoof 50k  (toggle)]];
+G2L["36"]["Name"] = [[Force50k]];
+G2L["36"]["Position"] = UDim2.new(0.01765, 0, 0.41671, 0);
+-- Attributes
+G2L["36"]:SetAttribute([[toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Spinadder
-G2L["37"] = Instance.new("TextButton", G2L["33"]);
-G2L["37"]["BorderSizePixel"] = 0;
-G2L["37"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["37"]["TextSize"] = 31;
-G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["37"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Text"] = [[Add Spins]];
-G2L["37"]["Name"] = [[Spinadder]];
-G2L["37"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Spinadder.LocalScript
-G2L["38"] = Instance.new("LocalScript", G2L["37"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Force50k.LocalScript
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptoend
-G2L["39"] = Instance.new("TextButton", G2L["33"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.TextLabel
+G2L["38"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["TextScaled"] = true;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["BackgroundTransparency"] = 1;
+G2L["38"]["Size"] = UDim2.new(0, 453, 0, 58);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[Spins, all spoofs require spins]];
+G2L["38"]["Position"] = UDim2.new(0.00187, 0, 0.30377, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceOg
+G2L["39"] = Instance.new("TextButton", G2L["2c"]);
 G2L["39"]["BorderSizePixel"] = 0;
 G2L["39"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["39"]["TextSize"] = 31;
@@ -637,18 +637,20 @@ G2L["39"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["39"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[Tp to end]];
-G2L["39"]["Name"] = [[Tptoend]];
-G2L["39"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
+G2L["39"]["Text"] = [[Spoof Og  (toggle)]];
+G2L["39"]["Name"] = [[ForceOg]];
+G2L["39"]["Position"] = UDim2.new(0.01952, 0, 0.46992, 0);
+-- Attributes
+G2L["39"]:SetAttribute([[toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptoend.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceOg.LocalScript
 G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptostart
-G2L["3b"] = Instance.new("TextButton", G2L["33"]);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceSleepy
+G2L["3b"] = Instance.new("TextButton", G2L["2c"]);
 G2L["3b"]["BorderSizePixel"] = 0;
 G2L["3b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["3b"]["TextSize"] = 31;
@@ -657,116 +659,95 @@ G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3b"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["Text"] = [[Tp to start]];
-G2L["3b"]["Name"] = [[Tptostart]];
-G2L["3b"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
+G2L["3b"]["Text"] = [[Force Sleepy (toggle)]];
+G2L["3b"]["Name"] = [[ForceSleepy]];
+G2L["3b"]["Position"] = UDim2.new(0.018, 0, 0.525, 0);
+-- Attributes
+G2L["3b"]:SetAttribute([[toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptostart.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceSleepy.LocalScript
 G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.GamesList
-G2L["3d"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["3d"]["Visible"] = false;
-G2L["3d"]["Active"] = true;
-G2L["3d"]["Interactable"] = false;
-G2L["3d"]["BorderSizePixel"] = 5;
-G2L["3d"]["Name"] = [[GamesList]];
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["3d"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["3d"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceScream
+G2L["3d"] = Instance.new("TextButton", G2L["2c"]);
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3d"]["TextSize"] = 31;
+G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3d"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Text"] = [[Force Scream (toggle)]];
+G2L["3d"]["Name"] = [[ForceScream]];
+G2L["3d"]["Position"] = UDim2.new(0.018, 0, 0.581, 0);
+-- Attributes
+G2L["3d"]:SetAttribute([[toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
-G2L["3e"] = Instance.new("TextLabel", G2L["3d"]);
-G2L["3e"]["TextWrapped"] = true;
-G2L["3e"]["BorderSizePixel"] = 0;
-G2L["3e"]["TextSize"] = 14;
-G2L["3e"]["TextScaled"] = true;
-G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3e"]["BackgroundTransparency"] = 1;
-G2L["3e"]["Size"] = UDim2.new(0, 361, 0, 50);
-G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["Text"] = [[Supported Games]];
-G2L["3e"]["Position"] = UDim2.new(0.02804, 0, 0.00665, 0);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceScream.LocalScript
+G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
 
 
--- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
-G2L["3f"] = Instance.new("TextLabel", G2L["3d"]);
+
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Autofarm
+G2L["3f"] = Instance.new("TextButton", G2L["2c"]);
 G2L["3f"]["TextWrapped"] = true;
 G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["TextSize"] = 14;
 G2L["3f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["3f"]["TextScaled"] = true;
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3f"]["TextSize"] = 28;
 G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["BackgroundTransparency"] = 1;
-G2L["3f"]["Size"] = UDim2.new(0, 490, 0, 50);
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3f"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Text"] = [[Scream for  Brainrots ✔️]];
-G2L["3f"]["Position"] = UDim2.new(0.02804, 0, 0.09091, 0);
+G2L["3f"]["Text"] = [[Auto Farm  Guest 666]];
+G2L["3f"]["Name"] = [[Autofarm]];
+G2L["3f"]["Position"] = UDim2.new(0.02513, 0, 0.16941, 0);
+-- Attributes
+G2L["3f"]:SetAttribute([[tiggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
-G2L["40"] = Instance.new("TextLabel", G2L["3d"]);
-G2L["40"]["TextWrapped"] = true;
-G2L["40"]["BorderSizePixel"] = 0;
-G2L["40"]["TextSize"] = 14;
-G2L["40"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["40"]["TextScaled"] = true;
-G2L["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["40"]["BackgroundTransparency"] = 1;
-G2L["40"]["Size"] = UDim2.new(0, 490, 0, 50);
-G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["40"]["Text"] = [[+1 mace escape ✔️]];
-G2L["40"]["Position"] = UDim2.new(0.02617, 0, 0.15743, 0);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Autofarm.LocalScript
+G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
 
 
--- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
-G2L["41"] = Instance.new("TextLabel", G2L["3d"]);
-G2L["41"]["TextWrapped"] = true;
-G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["TextSize"] = 14;
-G2L["41"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["41"]["TextScaled"] = true;
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["BackgroundTransparency"] = 1;
-G2L["41"]["Size"] = UDim2.new(0, 490, 0, 50);
+
+-- StarterGui.BrainrotDestroyet.Frame.GamesList
+G2L["41"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["41"]["Visible"] = false;
+G2L["41"]["Active"] = true;
+G2L["41"]["Interactable"] = false;
+G2L["41"]["BorderSizePixel"] = 5;
+G2L["41"]["Name"] = [[GamesList]];
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["41"]["Size"] = UDim2.new(0, 535, 0, 374);
+G2L["41"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
 G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Text"] = [[Hack For  Brainrot ✔️]];
-G2L["41"]["Position"] = UDim2.new(0.01869, 0, 0.22284, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
-G2L["42"] = Instance.new("TextLabel", G2L["3d"]);
+G2L["42"] = Instance.new("TextLabel", G2L["41"]);
 G2L["42"]["TextWrapped"] = true;
 G2L["42"]["BorderSizePixel"] = 0;
 G2L["42"]["TextSize"] = 14;
-G2L["42"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["42"]["TextScaled"] = true;
 G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["42"]["BackgroundTransparency"] = 1;
-G2L["42"]["Size"] = UDim2.new(0, 490, 0, 50);
+G2L["42"]["Size"] = UDim2.new(0, 361, 0, 50);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Text"] = [[Drill for brainrot ✔️]];
-G2L["42"]["Position"] = UDim2.new(0.01682, 0, 0.29379, 0);
+G2L["42"]["Text"] = [[Supported Games]];
+G2L["42"]["Position"] = UDim2.new(0.02804, 0, 0.00665, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
-G2L["43"] = Instance.new("TextLabel", G2L["3d"]);
+G2L["43"] = Instance.new("TextLabel", G2L["41"]);
 G2L["43"]["TextWrapped"] = true;
 G2L["43"]["BorderSizePixel"] = 0;
 G2L["43"]["TextSize"] = 14;
@@ -778,69 +759,93 @@ G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["43"]["BackgroundTransparency"] = 1;
 G2L["43"]["Size"] = UDim2.new(0, 490, 0, 50);
 G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["Text"] = [[+1 run for Needoh ✔️]];
-G2L["43"]["Position"] = UDim2.new(0.01682, 0, 0.36142, 0);
+G2L["43"]["Text"] = [[Scream for  Brainrots ✔️]];
+G2L["43"]["Position"] = UDim2.new(0.02804, 0, 0.09091, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
+G2L["44"] = Instance.new("TextLabel", G2L["41"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["44"]["TextScaled"] = true;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["BackgroundTransparency"] = 1;
+G2L["44"]["Size"] = UDim2.new(0, 490, 0, 50);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[+1 mace escape ✔️]];
+G2L["44"]["Position"] = UDim2.new(0.02617, 0, 0.15743, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
+G2L["45"] = Instance.new("TextLabel", G2L["41"]);
+G2L["45"]["TextWrapped"] = true;
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["45"]["TextScaled"] = true;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Size"] = UDim2.new(0, 490, 0, 50);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[Hack For  Brainrot ✔️]];
+G2L["45"]["Position"] = UDim2.new(0.01869, 0, 0.22284, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
+G2L["46"] = Instance.new("TextLabel", G2L["41"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["Size"] = UDim2.new(0, 490, 0, 50);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[Hiest A brainrot ✔️]];
+G2L["46"]["Position"] = UDim2.new(0.01682, 0, 0.29379, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.GamesList.TextLabel
+G2L["47"] = Instance.new("TextLabel", G2L["41"]);
+G2L["47"]["TextWrapped"] = true;
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["TextSize"] = 14;
+G2L["47"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["47"]["TextScaled"] = true;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["Size"] = UDim2.new(0, 490, 0, 50);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Text"] = [[+1 run for Needoh ✔️]];
+G2L["47"]["Position"] = UDim2.new(0.01682, 0, 0.36142, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.+1MaceJump
-G2L["44"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["44"]["Visible"] = false;
-G2L["44"]["Active"] = true;
-G2L["44"]["BorderSizePixel"] = 5;
-G2L["44"]["Name"] = [[+1MaceJump]];
-G2L["44"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["44"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["44"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
-G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["48"]["Visible"] = false;
+G2L["48"]["Active"] = true;
+G2L["48"]["BorderSizePixel"] = 5;
+G2L["48"]["Name"] = [[+1MaceJump]];
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["48"]["Size"] = UDim2.new(0, 535, 0, 374);
+G2L["48"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.AutoRebirth
-G2L["45"] = Instance.new("TextButton", G2L["44"]);
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["45"]["TextSize"] = 31;
-G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["45"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Text"] = [[Auto Rebirth]];
-G2L["45"]["Name"] = [[AutoRebirth]];
-G2L["45"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
--- Attributes
-G2L["45"]:SetAttribute([[Toggle]], false);
-
-
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.AutoRebirth.LocalScript
-G2L["46"] = Instance.new("LocalScript", G2L["45"]);
-
-
-
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmHellCoins
-G2L["47"] = Instance.new("TextButton", G2L["44"]);
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["47"]["TextSize"] = 31;
-G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["47"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[Farm Hell Coins]];
-G2L["47"]["Name"] = [[FarmHellCoins]];
-G2L["47"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
--- Attributes
-G2L["47"]:SetAttribute([[Toggle]], false);
-
-
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmHellCoins.LocalScript
-G2L["48"] = Instance.new("LocalScript", G2L["47"]);
-
-
-
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmWins
-G2L["49"] = Instance.new("TextButton", G2L["44"]);
+G2L["49"] = Instance.new("TextButton", G2L["48"]);
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["49"]["TextSize"] = 31;
@@ -849,95 +854,90 @@ G2L["49"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["49"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Text"] = [[Auto Farm 1k Wins]];
-G2L["49"]["Name"] = [[FarmWins]];
-G2L["49"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
+G2L["49"]["Text"] = [[Auto Rebirth]];
+G2L["49"]["Name"] = [[AutoRebirth]];
+G2L["49"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
 -- Attributes
 G2L["49"]:SetAttribute([[Toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmWins.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.AutoRebirth.LocalScript
 G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed
-G2L["4b"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmHellCoins
+G2L["4b"] = Instance.new("TextButton", G2L["48"]);
 G2L["4b"]["BorderSizePixel"] = 0;
 G2L["4b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["4b"]["TextSize"] = 31;
 G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4b"]["Size"] = UDim2.new(0, 381, 0, 50);
+G2L["4b"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Text"] = [[Speed]];
-G2L["4b"]["Name"] = [[Speed]];
-G2L["4b"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
+G2L["4b"]["Text"] = [[Farm Hell Coins]];
+G2L["4b"]["Name"] = [[FarmHellCoins]];
+G2L["4b"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
+-- Attributes
+G2L["4b"]:SetAttribute([[Toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmHellCoins.LocalScript
 G2L["4c"] = Instance.new("LocalScript", G2L["4b"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed.TextBox
-G2L["4d"] = Instance.new("TextBox", G2L["4b"]);
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmWins
+G2L["4d"] = Instance.new("TextButton", G2L["48"]);
 G2L["4d"]["BorderSizePixel"] = 0;
-G2L["4d"]["TextWrapped"] = true;
-G2L["4d"]["TextSize"] = 23;
-G2L["4d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["TextScaled"] = true;
-G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4d"]["PlaceholderText"] = [[Input Speed Here]];
-G2L["4d"]["Size"] = UDim2.new(0, 163, 0, 35);
-G2L["4d"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
+G2L["4d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4d"]["TextSize"] = 31;
+G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4d"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["Text"] = [[]];
+G2L["4d"]["Text"] = [[Auto Farm 1k Wins]];
+G2L["4d"]["Name"] = [[FarmWins]];
+G2L["4d"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
+-- Attributes
+G2L["4d"]:SetAttribute([[Toggle]], false);
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest
-G2L["4e"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["4e"]["Visible"] = false;
-G2L["4e"]["Active"] = true;
-G2L["4e"]["BorderSizePixel"] = 5;
-G2L["4e"]["Name"] = [[BrainrotHiest]];
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["4e"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["4e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
-G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmWins.LocalScript
+G2L["4e"] = Instance.new("LocalScript", G2L["4d"]);
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed
-G2L["4f"] = Instance.new("TextButton", G2L["4e"]);
+
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed
+G2L["4f"] = Instance.new("TextButton", G2L["48"]);
 G2L["4f"]["BorderSizePixel"] = 0;
 G2L["4f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["4f"]["TextSize"] = 31;
 G2L["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4f"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["4f"]["Size"] = UDim2.new(0, 381, 0, 50);
 G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4f"]["Text"] = [[Speed]];
 G2L["4f"]["Name"] = [[Speed]];
 G2L["4f"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed.LocalScript
 G2L["50"] = Instance.new("LocalScript", G2L["4f"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed.TextBox
+-- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed.TextBox
 G2L["51"] = Instance.new("TextBox", G2L["4f"]);
 G2L["51"]["BorderSizePixel"] = 0;
 G2L["51"]["TextWrapped"] = true;
 G2L["51"]["TextSize"] = 23;
 G2L["51"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["51"]["TextScaled"] = true;
-G2L["51"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["51"]["PlaceholderText"] = [[Input Speed Here]];
 G2L["51"]["Size"] = UDim2.new(0, 163, 0, 35);
@@ -946,48 +946,57 @@ G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["51"]["Text"] = [[]];
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptoend
-G2L["52"] = Instance.new("TextButton", G2L["4e"]);
-G2L["52"]["BorderSizePixel"] = 0;
-G2L["52"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["52"]["TextSize"] = 31;
-G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["52"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["52"]["Size"] = UDim2.new(0, 398, 0, 50);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest
+G2L["52"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["52"]["Visible"] = false;
+G2L["52"]["Active"] = true;
+G2L["52"]["BorderSizePixel"] = 5;
+G2L["52"]["Name"] = [[BrainrotHiest]];
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["52"]["Size"] = UDim2.new(0, 535, 0, 374);
+G2L["52"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Position"] = UDim2.new(0.29374, 0, 0.12678, 0);
 G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["52"]["Text"] = [[Tp to end]];
-G2L["52"]["Name"] = [[Tptoend]];
-G2L["52"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptoend.LocalScript
-G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed
+G2L["53"] = Instance.new("TextButton", G2L["52"]);
+G2L["53"]["BorderSizePixel"] = 0;
+G2L["53"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["53"]["TextSize"] = 31;
+G2L["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["53"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["Text"] = [[Speed]];
+G2L["53"]["Name"] = [[Speed]];
+G2L["53"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
 
 
-
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptostart
-G2L["54"] = Instance.new("TextButton", G2L["4e"]);
-G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["54"]["TextSize"] = 31;
-G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["54"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["Text"] = [[Tp to start]];
-G2L["54"]["Name"] = [[Tptostart]];
-G2L["54"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptostart.LocalScript
-G2L["55"] = Instance.new("LocalScript", G2L["54"]);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed.LocalScript
+G2L["54"] = Instance.new("LocalScript", G2L["53"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoCollect
-G2L["56"] = Instance.new("TextButton", G2L["4e"]);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed.TextBox
+G2L["55"] = Instance.new("TextBox", G2L["53"]);
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["TextWrapped"] = true;
+G2L["55"]["TextSize"] = 23;
+G2L["55"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["TextScaled"] = true;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["55"]["PlaceholderText"] = [[Input Speed Here]];
+G2L["55"]["Size"] = UDim2.new(0, 163, 0, 35);
+G2L["55"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Text"] = [[]];
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptoend
+G2L["56"] = Instance.new("TextButton", G2L["52"]);
 G2L["56"]["BorderSizePixel"] = 0;
 G2L["56"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["56"]["TextSize"] = 31;
@@ -996,183 +1005,177 @@ G2L["56"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["56"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["Text"] = [[AutoCollectFirst]];
-G2L["56"]["Name"] = [[AutoCollect]];
-G2L["56"]["Position"] = UDim2.new(0.02139, 0, 0.17537, 0);
--- Attributes
-G2L["56"]:SetAttribute([[Toggle]], false);
+G2L["56"]["Text"] = [[Tp to end]];
+G2L["56"]["Name"] = [[Tptoend]];
+G2L["56"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoCollect.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptoend.LocalScript
 G2L["57"] = Instance.new("LocalScript", G2L["56"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot
-G2L["58"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["58"]["Visible"] = false;
-G2L["58"]["Active"] = true;
-G2L["58"]["BorderSizePixel"] = 5;
-G2L["58"]["Name"] = [[HackForBrainrot]];
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["58"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["58"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptostart
+G2L["58"] = Instance.new("TextButton", G2L["52"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["58"]["TextSize"] = 31;
+G2L["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["58"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Text"] = [[Tp to start]];
+G2L["58"]["Name"] = [[Tptostart]];
+G2L["58"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptostart.LocalScript
+G2L["59"] = Instance.new("LocalScript", G2L["58"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoCollect
+G2L["5a"] = Instance.new("TextButton", G2L["52"]);
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5a"]["TextSize"] = 31;
+G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5a"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Text"] = [[AutoCollectFirst]];
+G2L["5a"]["Name"] = [[AutoCollect]];
+G2L["5a"]["Position"] = UDim2.new(0.02139, 0, 0.17537, 0);
+-- Attributes
+G2L["5a"]:SetAttribute([[Toggle]], false);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoCollect.LocalScript
+G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoFarm
+G2L["5c"] = Instance.new("TextButton", G2L["52"]);
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5c"]["TextSize"] = 31;
+G2L["5c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5c"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["Text"] = [[Auto Farm]];
+G2L["5c"]["Name"] = [[AutoFarm]];
+G2L["5c"]["Position"] = UDim2.new(0.02139, 0, 0.22969, 0);
+-- Attributes
+G2L["5c"]:SetAttribute([[Toggle]], false);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoFarm.LocalScript
+G2L["5d"] = Instance.new("LocalScript", G2L["5c"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoUpgrade
+G2L["5e"] = Instance.new("TextButton", G2L["52"]);
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5e"]["TextSize"] = 31;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5e"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[Auto Upgrade power]];
+G2L["5e"]["Name"] = [[AutoUpgrade]];
+G2L["5e"]["Position"] = UDim2.new(0.02139, 0, 0.28623, 0);
+-- Attributes
+G2L["5e"]:SetAttribute([[Toggle]], false);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoUpgrade.LocalScript
+G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot
+G2L["60"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["60"]["Visible"] = false;
+G2L["60"]["Active"] = true;
+G2L["60"]["BorderSizePixel"] = 5;
+G2L["60"]["Name"] = [[HackForBrainrot]];
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["60"]["Size"] = UDim2.new(0, 535, 0, 374);
+G2L["60"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoGrabUp
-G2L["59"] = Instance.new("TextButton", G2L["58"]);
-G2L["59"]["BorderSizePixel"] = 0;
-G2L["59"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["59"]["TextSize"] = 31;
-G2L["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["59"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["59"]["Text"] = [[Auto Grab Upgrade]];
-G2L["59"]["Name"] = [[AutoGrabUp]];
-G2L["59"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
+G2L["61"] = Instance.new("TextButton", G2L["60"]);
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["61"]["TextSize"] = 31;
+G2L["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["61"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Text"] = [[Auto Grab Upgrade]];
+G2L["61"]["Name"] = [[AutoGrabUp]];
+G2L["61"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoGrabUp.LocalScript
-G2L["5a"] = Instance.new("LocalScript", G2L["59"]);
+G2L["62"] = Instance.new("LocalScript", G2L["61"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoHackUp
-G2L["5b"] = Instance.new("TextButton", G2L["58"]);
-G2L["5b"]["BorderSizePixel"] = 0;
-G2L["5b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5b"]["TextSize"] = 31;
-G2L["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5b"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5b"]["Text"] = [[Auto hacking upgrade]];
-G2L["5b"]["Name"] = [[AutoHackUp]];
-G2L["5b"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
+G2L["63"] = Instance.new("TextButton", G2L["60"]);
+G2L["63"]["BorderSizePixel"] = 0;
+G2L["63"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["63"]["TextSize"] = 31;
+G2L["63"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["63"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["63"]["Text"] = [[Auto hacking upgrade]];
+G2L["63"]["Name"] = [[AutoHackUp]];
+G2L["63"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoHackUp.LocalScript
-G2L["5c"] = Instance.new("LocalScript", G2L["5b"]);
+G2L["64"] = Instance.new("LocalScript", G2L["63"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.BuySlot
-G2L["5d"] = Instance.new("TextButton", G2L["58"]);
-G2L["5d"]["BorderSizePixel"] = 0;
-G2L["5d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5d"]["TextSize"] = 31;
-G2L["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5d"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5d"]["Text"] = [[Purchace Slot ]];
-G2L["5d"]["Name"] = [[BuySlot]];
-G2L["5d"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
+G2L["65"] = Instance.new("TextButton", G2L["60"]);
+G2L["65"]["BorderSizePixel"] = 0;
+G2L["65"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["65"]["TextSize"] = 31;
+G2L["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["65"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Text"] = [[Purchace Slot ]];
+G2L["65"]["Name"] = [[BuySlot]];
+G2L["65"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.BuySlot.LocalScript
-G2L["5e"] = Instance.new("LocalScript", G2L["5d"]);
+G2L["66"] = Instance.new("LocalScript", G2L["65"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Speed
-G2L["5f"] = Instance.new("TextButton", G2L["58"]);
-G2L["5f"]["BorderSizePixel"] = 0;
-G2L["5f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5f"]["TextSize"] = 31;
-G2L["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5f"]["Size"] = UDim2.new(0, 381, 0, 50);
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[Speed]];
-G2L["5f"]["Name"] = [[Speed]];
-G2L["5f"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Speed.LocalScript
-G2L["60"] = Instance.new("LocalScript", G2L["5f"]);
-
-
-
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Speed.TextBox
-G2L["61"] = Instance.new("TextBox", G2L["5f"]);
-G2L["61"]["CursorPosition"] = -1;
-G2L["61"]["BorderSizePixel"] = 0;
-G2L["61"]["TextWrapped"] = true;
-G2L["61"]["TextSize"] = 23;
-G2L["61"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["61"]["TextScaled"] = true;
-G2L["61"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["61"]["PlaceholderText"] = [[Input Speed Here]];
-G2L["61"]["Size"] = UDim2.new(0, 163, 0, 35);
-G2L["61"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
-G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["61"]["Text"] = [[]];
-
-
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptoend
-G2L["62"] = Instance.new("TextButton", G2L["58"]);
-G2L["62"]["BorderSizePixel"] = 0;
-G2L["62"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["62"]["TextSize"] = 31;
-G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["62"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["62"]["Text"] = [[Tp to end]];
-G2L["62"]["Name"] = [[Tptoend]];
-G2L["62"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptoend.LocalScript
-G2L["63"] = Instance.new("LocalScript", G2L["62"]);
-
-
-
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptostart
-G2L["64"] = Instance.new("TextButton", G2L["58"]);
-G2L["64"]["BorderSizePixel"] = 0;
-G2L["64"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["64"]["TextSize"] = 31;
-G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["64"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["64"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["64"]["Text"] = [[Tp to start]];
-G2L["64"]["Name"] = [[Tptostart]];
-G2L["64"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptostart.LocalScript
-G2L["65"] = Instance.new("LocalScript", G2L["64"]);
-
-
-
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth
-G2L["66"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["66"]["Visible"] = false;
-G2L["66"]["Active"] = true;
-G2L["66"]["BorderSizePixel"] = 5;
-G2L["66"]["Name"] = [[Neddohplus1orstmth]];
-G2L["66"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["66"]["Size"] = UDim2.new(0, 535, 0, 374);
-G2L["66"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["66"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
-G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptostart
-G2L["67"] = Instance.new("TextButton", G2L["66"]);
+G2L["67"] = Instance.new("TextButton", G2L["60"]);
 G2L["67"]["BorderSizePixel"] = 0;
 G2L["67"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["67"]["TextSize"] = 31;
@@ -1181,74 +1184,74 @@ G2L["67"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["67"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["67"]["Text"] = [[Tp to start]];
-G2L["67"]["Name"] = [[Tptostart]];
-G2L["67"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
+G2L["67"]["Text"] = [[Speed]];
+G2L["67"]["Name"] = [[Speed]];
+G2L["67"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptostart.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Speed.LocalScript
 G2L["68"] = Instance.new("LocalScript", G2L["67"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptoend
-G2L["69"] = Instance.new("TextButton", G2L["66"]);
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Speed.TextBox
+G2L["69"] = Instance.new("TextBox", G2L["67"]);
 G2L["69"]["BorderSizePixel"] = 0;
-G2L["69"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["69"]["TextSize"] = 31;
-G2L["69"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["69"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["69"]["TextWrapped"] = true;
+G2L["69"]["TextSize"] = 23;
+G2L["69"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["TextScaled"] = true;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["69"]["PlaceholderText"] = [[Input Speed Here]];
+G2L["69"]["Size"] = UDim2.new(0, 163, 0, 35);
+G2L["69"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
 G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["Text"] = [[Tp to end]];
-G2L["69"]["Name"] = [[Tptoend]];
-G2L["69"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
+G2L["69"]["Text"] = [[]];
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptoend.LocalScript
-G2L["6a"] = Instance.new("LocalScript", G2L["69"]);
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptoend
+G2L["6a"] = Instance.new("TextButton", G2L["60"]);
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6a"]["TextSize"] = 31;
+G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6a"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Text"] = [[Tp to end]];
+G2L["6a"]["Name"] = [[Tptoend]];
+G2L["6a"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
 
 
-
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed
-G2L["6b"] = Instance.new("TextButton", G2L["66"]);
-G2L["6b"]["BorderSizePixel"] = 0;
-G2L["6b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6b"]["TextSize"] = 31;
-G2L["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6b"]["Size"] = UDim2.new(0, 381, 0, 50);
-G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6b"]["Text"] = [[Speed]];
-G2L["6b"]["Name"] = [[Speed]];
-G2L["6b"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
-
-
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed.LocalScript
-G2L["6c"] = Instance.new("LocalScript", G2L["6b"]);
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptoend.LocalScript
+G2L["6b"] = Instance.new("LocalScript", G2L["6a"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed.TextBox
-G2L["6d"] = Instance.new("TextBox", G2L["6b"]);
-G2L["6d"]["BorderSizePixel"] = 0;
-G2L["6d"]["TextWrapped"] = true;
-G2L["6d"]["TextSize"] = 23;
-G2L["6d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6d"]["TextScaled"] = true;
-G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6d"]["PlaceholderText"] = [[Input Speed Here]];
-G2L["6d"]["Size"] = UDim2.new(0, 163, 0, 35);
-G2L["6d"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
-G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6d"]["Text"] = [[]];
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptostart
+G2L["6c"] = Instance.new("TextButton", G2L["60"]);
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6c"]["TextSize"] = 31;
+G2L["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6c"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Text"] = [[Tp to start]];
+G2L["6c"]["Name"] = [[Tptostart]];
+G2L["6c"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.CollectFirst3
-G2L["6e"] = Instance.new("TextButton", G2L["66"]);
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptostart.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoSteal
+G2L["6e"] = Instance.new("TextButton", G2L["60"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["6e"]["TextSize"] = 31;
@@ -1257,121 +1260,360 @@ G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
 G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["6e"]["Size"] = UDim2.new(0, 398, 0, 50);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Text"] = [[Auto Collect first three]];
-G2L["6e"]["Name"] = [[CollectFirst3]];
-G2L["6e"]["Position"] = UDim2.new(0.02513, 0, 0.32712, 0);
--- Attributes
-G2L["6e"]:SetAttribute([[Toggle]], false);
+G2L["6e"]["Text"] = [[Auto Farm]];
+G2L["6e"]["Name"] = [[AutoSteal]];
+G2L["6e"]["Position"] = UDim2.new(0.02513, 0, 0.27127, 0);
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.CollectFirst3.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoSteal.LocalScript
 G2L["6f"] = Instance.new("LocalScript", G2L["6e"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.BuySlot
-G2L["70"] = Instance.new("TextButton", G2L["66"]);
-G2L["70"]["BorderSizePixel"] = 0;
-G2L["70"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["70"]["TextSize"] = 31;
-G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["70"]["Size"] = UDim2.new(0, 398, 0, 50);
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth
+G2L["70"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["70"]["Visible"] = false;
+G2L["70"]["Active"] = true;
+G2L["70"]["BorderSizePixel"] = 5;
+G2L["70"]["CanvasPosition"] = Vector2.new(0, 100);
+G2L["70"]["Name"] = [[Neddohplus1orstmth]];
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["70"]["Size"] = UDim2.new(0, 535, 0, 374);
+G2L["70"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Position"] = UDim2.new(0.29, 0, 0.129, 0);
 G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["70"]["Text"] = [[Purchace Slot ]];
-G2L["70"]["Name"] = [[BuySlot]];
-G2L["70"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptostart
+G2L["71"] = Instance.new("TextButton", G2L["70"]);
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["71"]["TextSize"] = 31;
+G2L["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["71"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["Text"] = [[Tp to start]];
+G2L["71"]["Name"] = [[Tptostart]];
+G2L["71"]["Position"] = UDim2.new(0.02513, 0, 0.07039, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptostart.LocalScript
+G2L["72"] = Instance.new("LocalScript", G2L["71"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptoend
+G2L["73"] = Instance.new("TextButton", G2L["70"]);
+G2L["73"]["BorderSizePixel"] = 0;
+G2L["73"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["73"]["TextSize"] = 31;
+G2L["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["73"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["73"]["Text"] = [[Tp to end]];
+G2L["73"]["Name"] = [[Tptoend]];
+G2L["73"]["Position"] = UDim2.new(0.02513, 0, 0.12215, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptoend.LocalScript
+G2L["74"] = Instance.new("LocalScript", G2L["73"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed
+G2L["75"] = Instance.new("TextButton", G2L["70"]);
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["75"]["TextSize"] = 31;
+G2L["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["75"]["Size"] = UDim2.new(0, 381, 0, 50);
+G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["75"]["Text"] = [[Speed]];
+G2L["75"]["Name"] = [[Speed]];
+G2L["75"]["Position"] = UDim2.new(0.02513, 0, 0.01863, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed.LocalScript
+G2L["76"] = Instance.new("LocalScript", G2L["75"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed.TextBox
+G2L["77"] = Instance.new("TextBox", G2L["75"]);
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["TextWrapped"] = true;
+G2L["77"]["TextSize"] = 23;
+G2L["77"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["TextScaled"] = true;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["77"]["PlaceholderText"] = [[Input Speed Here]];
+G2L["77"]["Size"] = UDim2.new(0, 163, 0, 35);
+G2L["77"]["Position"] = UDim2.new(0.52764, 0, 0.14, 0);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Text"] = [[]];
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.CollectFirst3
+G2L["78"] = Instance.new("TextButton", G2L["70"]);
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["78"]["TextSize"] = 31;
+G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["78"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["Text"] = [[Auto Collect first three]];
+G2L["78"]["Name"] = [[CollectFirst3]];
+G2L["78"]["Position"] = UDim2.new(0.02513, 0, 0.32712, 0);
 -- Attributes
-G2L["70"]:SetAttribute([[Toggle]], false);
+G2L["78"]:SetAttribute([[Toggle]], false);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.CollectFirst3.LocalScript
+G2L["79"] = Instance.new("LocalScript", G2L["78"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.BuySlot
+G2L["7a"] = Instance.new("TextButton", G2L["70"]);
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7a"]["TextSize"] = 31;
+G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7a"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Text"] = [[Purchace Slot ]];
+G2L["7a"]["Name"] = [[BuySlot]];
+G2L["7a"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
+-- Attributes
+G2L["7a"]:SetAttribute([[Toggle]], false);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.BuySlot.LocalScript
-G2L["71"] = Instance.new("LocalScript", G2L["70"]);
+G2L["7b"] = Instance.new("LocalScript", G2L["7a"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoUpfirst3
-G2L["72"] = Instance.new("TextButton", G2L["66"]);
-G2L["72"]["BorderSizePixel"] = 0;
-G2L["72"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["72"]["TextSize"] = 31;
-G2L["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["72"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["72"]["Text"] = [[Auto Upgrade First three slots]];
-G2L["72"]["Name"] = [[AutoUpfirst3]];
-G2L["72"]["Position"] = UDim2.new(0.02513, 0, 0.27536, 0);
+G2L["7c"] = Instance.new("TextButton", G2L["70"]);
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7c"]["TextSize"] = 31;
+G2L["7c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7c"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Text"] = [[Auto Upgrade First three slots]];
+G2L["7c"]["Name"] = [[AutoUpfirst3]];
+G2L["7c"]["Position"] = UDim2.new(0.02513, 0, 0.27536, 0);
 -- Attributes
-G2L["72"]:SetAttribute([[Toggle]], false);
+G2L["7c"]:SetAttribute([[Toggle]], false);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoUpfirst3.LocalScript
-G2L["73"] = Instance.new("LocalScript", G2L["72"]);
+G2L["7d"] = Instance.new("LocalScript", G2L["7c"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoSpeedUp
-G2L["74"] = Instance.new("TextButton", G2L["66"]);
-G2L["74"]["BorderSizePixel"] = 0;
-G2L["74"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["74"]["TextSize"] = 31;
-G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["74"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["Text"] = [[Auto Upgrade Speed]];
-G2L["74"]["Name"] = [[AutoSpeedUp]];
-G2L["74"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
+G2L["7e"] = Instance.new("TextButton", G2L["70"]);
+G2L["7e"]["BorderSizePixel"] = 0;
+G2L["7e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7e"]["TextSize"] = 31;
+G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7e"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Text"] = [[Auto Upgrade Speed]];
+G2L["7e"]["Name"] = [[AutoSpeedUp]];
+G2L["7e"]["Position"] = UDim2.new(0.02513, 0, 0.17391, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoSpeedUp.LocalScript
-G2L["75"] = Instance.new("LocalScript", G2L["74"]);
+G2L["7f"] = Instance.new("LocalScript", G2L["7e"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoGrabUp
-G2L["76"] = Instance.new("TextButton", G2L["66"]);
-G2L["76"]["BorderSizePixel"] = 0;
-G2L["76"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["76"]["TextSize"] = 31;
-G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
-G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["76"]["Size"] = UDim2.new(0, 398, 0, 50);
-G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["76"]["Text"] = [[Auto Grab Upgrade]];
-G2L["76"]["Name"] = [[AutoGrabUp]];
-G2L["76"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
+G2L["80"] = Instance.new("TextButton", G2L["70"]);
+G2L["80"]["BorderSizePixel"] = 0;
+G2L["80"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["80"]["TextSize"] = 31;
+G2L["80"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["80"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["80"]["Size"] = UDim2.new(0, 398, 0, 50);
+G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["Text"] = [[Auto Grab Upgrade]];
+G2L["80"]["Name"] = [[AutoGrabUp]];
+G2L["80"]["Position"] = UDim2.new(0.02513, 0, 0.2236, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoGrabUp.LocalScript
-G2L["77"] = Instance.new("LocalScript", G2L["76"]);
+G2L["81"] = Instance.new("LocalScript", G2L["80"]);
 
 
 
--- StarterGui.BrainrotDestroyet.Frame.DragDetector
-G2L["78"] = Instance.new("DragDetector", G2L["2"]);
+-- StarterGui.BrainrotDestroyet.Frame.UIStroke
+G2L["82"] = Instance.new("UIStroke", G2L["2"]);
+G2L["82"]["Thickness"] = 6.7;
+G2L["82"]["Color"] = Color3.fromRGB(21, 21, 21);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.UIDragDetector
+G2L["83"] = Instance.new("UIDragDetector", G2L["2"]);
+G2L["83"]["DragUDim2"] = UDim2.new(0, -16, 0, -3);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor
+G2L["84"] = Instance.new("TextBox", G2L["2"]);
+G2L["84"]["Visible"] = false;
+G2L["84"]["Name"] = [[TextEditor]];
+G2L["84"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["84"]["BorderSizePixel"] = 5;
+G2L["84"]["TextWrapped"] = true;
+G2L["84"]["TextSize"] = 15;
+G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["84"]["MultiLine"] = true;
+G2L["84"]["ClearTextOnFocus"] = false;
+G2L["84"]["Size"] = UDim2.new(0, 535, 0, 374);
+G2L["84"]["Position"] = UDim2.new(0.28918, 0, 0.12567, 0);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Text"] = [[This is just a small code editor for mobile user so use it if you need to then paste ur code into ur executor]];
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.Clear
+G2L["85"] = Instance.new("ImageButton", G2L["84"]);
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["BackgroundTransparency"] = 1;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["Image"] = [[rbxassetid://77365486539314]];
+G2L["85"]["Size"] = UDim2.new(0, 50, 0, 52);
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Name"] = [[Clear]];
+G2L["85"]["Position"] = UDim2.new(0.437, 0, -0.14171, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.Clear.LocalScript
+G2L["86"] = Instance.new("LocalScript", G2L["85"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.Run
+G2L["87"] = Instance.new("ImageButton", G2L["84"]);
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["BackgroundTransparency"] = 1;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["Image"] = [[rbxassetid://13576292973]];
+G2L["87"]["Size"] = UDim2.new(0, 44, 0, 45);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Name"] = [[Run]];
+G2L["87"]["Position"] = UDim2.new(0.73231, 0, -0.14149, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.Run.LocalScript
+G2L["88"] = Instance.new("LocalScript", G2L["87"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyScript
+G2L["89"] = Instance.new("ImageButton", G2L["84"]);
+G2L["89"]["BorderSizePixel"] = 0;
+G2L["89"]["BackgroundTransparency"] = 1;
+G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["89"]["Image"] = [[rbxassetid://133824470118301]];
+G2L["89"]["Size"] = UDim2.new(0, 60, 0, 59);
+G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["89"]["Name"] = [[CopyScript]];
+G2L["89"]["Position"] = UDim2.new(0.32455, 0, -0.15218, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyScript.LocalScript
+G2L["8a"] = Instance.new("LocalScript", G2L["89"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyAsLoadstring
+G2L["8b"] = Instance.new("ImageButton", G2L["84"]);
+G2L["8b"]["BorderSizePixel"] = 0;
+G2L["8b"]["BackgroundTransparency"] = 1;
+G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8b"]["Image"] = [[rbxassetid://133824470118301]];
+G2L["8b"]["Size"] = UDim2.new(0, 64, 0, 59);
+G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8b"]["Name"] = [[CopyAsLoadstring]];
+G2L["8b"]["Position"] = UDim2.new(0.81614, 0, -0.1602, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyAsLoadstring.LocalScript
+G2L["8c"] = Instance.new("LocalScript", G2L["8b"]);
+
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyAsLoadstring.TextLabel
+G2L["8d"] = Instance.new("TextLabel", G2L["8b"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["TextSize"] = 14;
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["BackgroundTransparency"] = 1;
+G2L["8d"]["Size"] = UDim2.new(0, 98, 0, 19);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Text"] = [[(Loadstring)]];
+G2L["8d"]["Position"] = UDim2.new(0.5625, 0, 0.05085, 0);
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.TextBox
+G2L["8e"] = Instance.new("TextBox", G2L["84"]);
+G2L["8e"]["BorderSizePixel"] = 5;
+G2L["8e"]["TextWrapped"] = true;
+G2L["8e"]["TextSize"] = 16;
+G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8e"]["ClearTextOnFocus"] = false;
+G2L["8e"]["PlaceholderText"] = [[text  size]];
+G2L["8e"]["Size"] = UDim2.new(0, 54, 0, 45);
+G2L["8e"]["Position"] = UDim2.new(0.56654, 0, -0.13476, 0);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Text"] = [[14]];
+
+
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.TextBox.LocalScript
+G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
 
 
 
 -- StarterGui.BrainrotDestroyet.Ui Opner
-G2L["79"] = Instance.new("ImageButton", G2L["1"]);
-G2L["79"]["BorderSizePixel"] = 0;
-G2L["79"]["BackgroundTransparency"] = 1;
-G2L["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["79"]["Image"] = [[rbxassetid://103327125341396]];
-G2L["79"]["Size"] = UDim2.new(0, 59, 0, 59);
-G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["79"]["Name"] = [[Ui Opner]];
-G2L["79"]["Position"] = UDim2.new(0.50502, 0, 0.1942, 0);
+G2L["90"] = Instance.new("ImageButton", G2L["1"]);
+G2L["90"]["BorderSizePixel"] = 0;
+G2L["90"]["BackgroundTransparency"] = 1;
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["Image"] = [[rbxassetid://103327125341396]];
+G2L["90"]["Size"] = UDim2.new(0, 59, 0, 59);
+G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["Name"] = [[Ui Opner]];
+G2L["90"]["Position"] = UDim2.new(0.50502, 0, 0.1942, 0);
 
 
 -- StarterGui.BrainrotDestroyet.Ui Opner.LocalScript
-G2L["7a"] = Instance.new("LocalScript", G2L["79"]);
+G2L["91"] = Instance.new("LocalScript", G2L["90"]);
 
 
 
@@ -1810,48 +2052,9 @@ local script = G2L["2b"];
 	end)
 end;
 task.spawn(C_2b);
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.Clear.LocalScript
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed.LocalScript
 local function C_2e()
 local script = G2L["2e"];
-	local clear = script.Parent
-	local TextEditor = script.Parent.Parent
-	
-	clear.MouseButton1Click:Connect(function()
-		TextEditor.Text = ""
-	end)
-end;
-task.spawn(C_2e);
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.TextBox.LocalScript
-local function C_30()
-local script = G2L["30"];
-	local textbox = script.Parent
-	local editor = script.Parent.Parent
-	
-	textbox.Changed:Connect(function()
-		editor.TextSize = textbox.Text
-	end)
-end;
-task.spawn(C_30);
--- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyScript.LocalScript
-local function C_32()
-local script = G2L["32"];
-	local copy = script.Parent
-	local TextEditor = script.Parent.Parent
-	local startergui = game:GetService("StarterGui")
-	
-	copy.MouseButton1Click:Connect(function()
-		setclipboard(TextEditor.Text)
-		startergui:SetCore("SendNotification", {
-			Title = "Copied!",
-			Text = "Your script has been copied lol",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_32);
--- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Speed.LocalScript
-local function C_35()
-local script = G2L["35"];
 	local button = script.Parent
 	local textbox = script.Parent.TextBox
 	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
@@ -1863,10 +2066,10 @@ local script = G2L["35"];
 		end
 	end)
 end;
-task.spawn(C_35);
+task.spawn(C_2e);
 -- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Spinadder.LocalScript
-local function C_38()
-local script = G2L["38"];
+local function C_31()
+local script = G2L["31"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
@@ -1878,10 +2081,10 @@ local script = G2L["38"];
 		end
 	end)
 end;
-task.spawn(C_38);
+task.spawn(C_31);
 -- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptoend.LocalScript
-local function C_3a()
-local script = G2L["3a"];
+local function C_33()
+local script = G2L["33"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -1891,10 +2094,10 @@ local script = G2L["3a"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(2554, 135, -1866)
 	end)
 end;
-task.spawn(C_3a);
+task.spawn(C_33);
 -- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Tptostart.LocalScript
-local function C_3c()
-local script = G2L["3c"];
+local function C_35()
+local script = G2L["35"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -1904,10 +2107,127 @@ local script = G2L["3c"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-7, 127, 3)
 	end)
 end;
+task.spawn(C_35);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Force50k.LocalScript
+local function C_37()
+local script = G2L["37"];
+	local button = script.Parent
+	local toggle = script.Parent:GetAttribute("toggle")
+	
+	button.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			while toggle == true do
+				task.wait(2)
+				local Event = game:GetService("ReplicatedStorage").Remotes.SpinEventWheel
+				Event:FireServer(
+					2
+				)
+				wait(.2)
+			end
+		else
+			toggle = false
+		end
+	end)
+end;
+task.spawn(C_37);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceOg.LocalScript
+local function C_3a()
+local script = G2L["3a"];
+	local button = script.Parent
+	local toggle = script.Parent:GetAttribute("toggle")
+	
+	button.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			while toggle == true do
+				task.wait(2)
+				local Event = game:GetService("ReplicatedStorage").Remotes.SpinEventWheel
+				Event:FireServer(
+					4
+				)
+				wait(.2)
+			end
+		else
+			toggle = false
+		end
+	end)
+end;
+task.spawn(C_3a);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceSleepy.LocalScript
+local function C_3c()
+local script = G2L["3c"];
+	local button = script.Parent
+	local toggle = script.Parent:GetAttribute("toggle")
+	
+	button.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			while toggle == true do
+				task.wait(2)
+				local Event = game:GetService("ReplicatedStorage").Remotes.SpinEventWheel
+				Event:FireServer(
+					5
+				)
+				wait(.2)
+			end
+		else
+			toggle = false
+		end
+	end)
+end;
 task.spawn(C_3c);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.ForceScream.LocalScript
+local function C_3e()
+local script = G2L["3e"];
+	local button = script.Parent
+	local toggle = script.Parent:GetAttribute("toggle")
+	
+	button.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			while toggle == true do
+				task.wait(2)
+				local Event = game:GetService("ReplicatedStorage").Remotes.SpinEventWheel
+				Event:FireServer(
+					3
+				)
+				wait(.2)
+			end
+		else
+			toggle = false
+		end
+	end)
+end;
+task.spawn(C_3e);
+-- StarterGui.BrainrotDestroyet.Frame.screamforbrainrots.Autofarm.LocalScript
+local function C_40()
+local script = G2L["40"];
+	local children = game.Workspace.Mobs:GetChildren()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local children = game.Workspace.Mobs:GetChildren()
+	for __index, value in children do
+		if value:IsA("Model") then
+				if value.Name == "Guest 666" then
+					character:WaitForChild("HumanoidRootPart").CFrame = value.RootPart.CFrame
+					keypress(0x45)
+					task.wait(1)
+					keyrelease(0x45)
+					character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(831, 127, 14)
+					task.wait(.5)
+		end
+		end
+	end
+	end)
+end;
+task.spawn(C_40);
 -- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.AutoRebirth.LocalScript
-local function C_46()
-local script = G2L["46"];
+local function C_4a()
+local script = G2L["4a"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -1927,10 +2247,10 @@ local script = G2L["46"];
 		end
 	end)
 end;
-task.spawn(C_46);
+task.spawn(C_4a);
 -- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmHellCoins.LocalScript
-local function C_48()
-local script = G2L["48"];
+local function C_4c()
+local script = G2L["4c"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -1949,10 +2269,10 @@ local script = G2L["48"];
 		end
 	end)
 end;
-task.spawn(C_48);
+task.spawn(C_4c);
 -- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.FarmWins.LocalScript
-local function C_4a()
-local script = G2L["4a"];
+local function C_4e()
+local script = G2L["4e"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -1971,23 +2291,8 @@ local script = G2L["4a"];
 		end
 	end)
 end;
-task.spawn(C_4a);
+task.spawn(C_4e);
 -- StarterGui.BrainrotDestroyet.Frame.+1MaceJump.Speed.LocalScript
-local function C_4c()
-local script = G2L["4c"];
-	local button = script.Parent
-	local textbox = script.Parent.TextBox
-	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
-	
-	button.MouseButton1Click:Connect(function()
-		local speed = tonumber(textbox.Text)
-		if speed then
-			humanoid.WalkSpeed = speed
-		end
-	end)
-end;
-task.spawn(C_4c);
--- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed.LocalScript
 local function C_50()
 local script = G2L["50"];
 	local button = script.Parent
@@ -2002,9 +2307,24 @@ local script = G2L["50"];
 	end)
 end;
 task.spawn(C_50);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Speed.LocalScript
+local function C_54()
+local script = G2L["54"];
+	local button = script.Parent
+	local textbox = script.Parent.TextBox
+	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+	
+	button.MouseButton1Click:Connect(function()
+		local speed = tonumber(textbox.Text)
+		if speed then
+			humanoid.WalkSpeed = speed
+		end
+	end)
+end;
+task.spawn(C_54);
 -- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptoend.LocalScript
-local function C_53()
-local script = G2L["53"];
+local function C_57()
+local script = G2L["57"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2014,10 +2334,10 @@ local script = G2L["53"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-4409, 2787, -43)
 	end)
 end;
-task.spawn(C_53);
+task.spawn(C_57);
 -- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.Tptostart.LocalScript
-local function C_55()
-local script = G2L["55"];
+local function C_59()
+local script = G2L["59"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2027,10 +2347,10 @@ local script = G2L["55"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(117, 3374, -3)
 	end)
 end;
-task.spawn(C_55);
+task.spawn(C_59);
 -- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoCollect.LocalScript
-local function C_57()
-local script = G2L["57"];
+local function C_5b()
+local script = G2L["5b"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2053,10 +2373,60 @@ local script = G2L["57"];
 		end
 	end)
 end;
-task.spawn(C_57);
+task.spawn(C_5b);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoFarm.LocalScript
+local function C_5d()
+local script = G2L["5d"];
+	local children = game.Workspace.Brainrots:GetChildren()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local children = game.Workspace.Brainrots:GetChildren()
+		for __index, value in children do
+			if value:IsA("Model") then
+				if value:GetAttribute("Rarity") == "Ancient" and value:GetAttribute("ZoneName") == "AncientBest" then
+					character:WaitForChild("HumanoidRootPart").CFrame = value.PrimaryPart.CFrame
+					wait (4)
+					keypress(0x45)
+					task.wait(2.4)
+					keyrelease(0x45)
+					character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(132, 3374, 12)
+					task.wait(.5)
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_5d);
+-- StarterGui.BrainrotDestroyet.Frame.BrainrotHiest.AutoUpgrade.LocalScript
+local function C_5f()
+local script = G2L["5f"];
+	local button = script.Parent 
+	local player = game.Players.LocalPlayer
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local toggle = button:GetAttribute("Toggle")
+	
+	button.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			while toggle == true do
+				local Event = game:GetService("ReplicatedStorage").Remotes.BuyStomp
+				Event:FireServer(
+					1
+				)
+			end
+		else
+			toggle = false
+		end
+	end)
+end;
+task.spawn(C_5f);
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoGrabUp.LocalScript
-local function C_5a()
-local script = G2L["5a"];
+local function C_62()
+local script = G2L["62"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2079,10 +2449,10 @@ local script = G2L["5a"];
 		end
 	end)
 end;
-task.spawn(C_5a);
+task.spawn(C_62);
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoHackUp.LocalScript
-local function C_5c()
-local script = G2L["5c"];
+local function C_64()
+local script = G2L["64"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2105,10 +2475,10 @@ local script = G2L["5c"];
 		end
 	end)
 end;
-task.spawn(C_5c);
+task.spawn(C_64);
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.BuySlot.LocalScript
-local function C_5e()
-local script = G2L["5e"];
+local function C_66()
+local script = G2L["66"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2128,10 +2498,10 @@ local script = G2L["5e"];
 		end
 	end)
 end;
-task.spawn(C_5e);
+task.spawn(C_66);
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Speed.LocalScript
-local function C_60()
-local script = G2L["60"];
+local function C_68()
+local script = G2L["68"];
 	local button = script.Parent
 	local textbox = script.Parent.TextBox
 	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
@@ -2143,23 +2513,23 @@ local script = G2L["60"];
 		end
 	end)
 end;
-task.spawn(C_60);
+task.spawn(C_68);
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptoend.LocalScript
-local function C_63()
-local script = G2L["63"];
+local function C_6b()
+local script = G2L["6b"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
 	
 	button.MouseButton1Click:Connect(function()
-		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-2430, 43, -713)
+		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-2490, 4, -726)
 	end)
 end;
-task.spawn(C_63);
+task.spawn(C_6b);
 -- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.Tptostart.LocalScript
-local function C_65()
-local script = G2L["65"];
+local function C_6d()
+local script = G2L["6d"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2169,10 +2539,33 @@ local script = G2L["65"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(179, 4, -723)
 	end)
 end;
-task.spawn(C_65);
+task.spawn(C_6d);
+-- StarterGui.BrainrotDestroyet.Frame.HackForBrainrot.AutoSteal.LocalScript
+local function C_6f()
+local script = G2L["6f"];
+	local children = game.Workspace.EntitiesFolder:GetChildren()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local children = game.Workspace.EntitiesFolder:GetChildren()
+		for __index, value in children do
+			if value:IsA("Model") then
+					character:WaitForChild("HumanoidRootPart").CFrame = value.PrimaryPart.CFrame
+					keypress(0x45)
+					task.wait(1)
+					keyrelease(0x45)
+				character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(179, 4, -723)
+					task.wait(.5)
+			end
+		end
+	end)
+end;
+task.spawn(C_6f);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptostart.LocalScript
-local function C_68()
-local script = G2L["68"];
+local function C_72()
+local script = G2L["72"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2182,10 +2575,10 @@ local script = G2L["68"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(0, 3, 23)
 	end)
 end;
-task.spawn(C_68);
+task.spawn(C_72);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Tptoend.LocalScript
-local function C_6a()
-local script = G2L["6a"];
+local function C_74()
+local script = G2L["74"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2195,10 +2588,10 @@ local script = G2L["6a"];
 		character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-93, 55, 5380)
 	end)
 end;
-task.spawn(C_6a);
+task.spawn(C_74);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.Speed.LocalScript
-local function C_6c()
-local script = G2L["6c"];
+local function C_76()
+local script = G2L["76"];
 	local button = script.Parent
 	local textbox = script.Parent.TextBox
 	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
@@ -2210,10 +2603,10 @@ local script = G2L["6c"];
 		end
 	end)
 end;
-task.spawn(C_6c);
+task.spawn(C_76);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.CollectFirst3.LocalScript
-local function C_6f()
-local script = G2L["6f"];
+local function C_79()
+local script = G2L["79"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2236,10 +2629,10 @@ local script = G2L["6f"];
 		end
 	end)
 end;
-task.spawn(C_6f);
+task.spawn(C_79);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.BuySlot.LocalScript
-local function C_71()
-local script = G2L["71"];
+local function C_7b()
+local script = G2L["7b"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2260,10 +2653,10 @@ local script = G2L["71"];
 		end
 	end)
 end;
-task.spawn(C_71);
+task.spawn(C_7b);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoUpfirst3.LocalScript
-local function C_73()
-local script = G2L["73"];
+local function C_7d()
+local script = G2L["7d"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2298,10 +2691,10 @@ local script = G2L["73"];
 		end
 	end)
 end;
-task.spawn(C_73);
+task.spawn(C_7d);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoSpeedUp.LocalScript
-local function C_75()
-local script = G2L["75"];
+local function C_7f()
+local script = G2L["7f"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2323,10 +2716,10 @@ local script = G2L["75"];
 		end
 	end)
 end;
-task.spawn(C_75);
+task.spawn(C_7f);
 -- StarterGui.BrainrotDestroyet.Frame.Neddohplus1orstmth.AutoGrabUp.LocalScript
-local function C_77()
-local script = G2L["77"];
+local function C_81()
+local script = G2L["81"];
 	local button = script.Parent 
 	local player = game.Players.LocalPlayer
 	local player = game.Players.LocalPlayer
@@ -2349,10 +2742,78 @@ local script = G2L["77"];
 		end
 	end)
 end;
-task.spawn(C_77);
+task.spawn(C_81);
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.Clear.LocalScript
+local function C_86()
+local script = G2L["86"];
+	local clear = script.Parent
+	local TextEditor = script.Parent.Parent
+	
+	clear.MouseButton1Click:Connect(function()
+		TextEditor.Text = ""
+	end)
+end;
+task.spawn(C_86);
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.Run.LocalScript
+local function C_88()
+local script = G2L["88"];
+	local copy = script.Parent
+	local TextEditor = script.Parent.Parent
+	local startergui = game:GetService("StarterGui")
+	
+	copy.MouseButton1Click:Connect(function()
+		loadstring(TextEditor.Text)()
+	end)
+end;
+task.spawn(C_88);
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyScript.LocalScript
+local function C_8a()
+local script = G2L["8a"];
+	local copy = script.Parent
+	local TextEditor = script.Parent.Parent
+	local startergui = game:GetService("StarterGui")
+	
+	copy.MouseButton1Click:Connect(function()
+		setclipboard(TextEditor.Text)
+		startergui:SetCore("SendNotification", {
+			Title = "Copied!",
+			Text = "Your script has been copied lol",
+			Duration = 5
+		})
+	end)
+end;
+task.spawn(C_8a);
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.CopyAsLoadstring.LocalScript
+local function C_8c()
+local script = G2L["8c"];
+	local copy = script.Parent
+	local TextEditor = script.Parent.Parent
+	local startergui = game:GetService("StarterGui")
+	
+	copy.MouseButton1Click:Connect(function()
+		setclipboard("loadstring([[" .. TextEditor.Text .. "]])()")
+		startergui:SetCore("SendNotification", {
+			Title = "Copied!",
+			Text = "Your script has been copied as loadstring",
+			Duration = 5
+		})
+	end)
+end;
+task.spawn(C_8c);
+-- StarterGui.BrainrotDestroyet.Frame.TextEditor.TextBox.LocalScript
+local function C_8f()
+local script = G2L["8f"];
+	local textbox = script.Parent
+	local editor = script.Parent.Parent
+	
+	textbox.Changed:Connect(function()
+		editor.TextSize = textbox.Text
+	end)
+end;
+task.spawn(C_8f);
 -- StarterGui.BrainrotDestroyet.Ui Opner.LocalScript
-local function C_7a()
-local script = G2L["7a"];
+local function C_91()
+local script = G2L["91"];
 	local button = script.Parent
 	local ui = script.Parent.Parent.Frame
 	
@@ -2364,6 +2825,6 @@ local script = G2L["7a"];
 		end
 	end)
 end;
-task.spawn(C_7a);
+task.spawn(C_91);
 
 return G2L["1"], require;
